@@ -1,1 +1,146 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+
+
 /* Add CSS styling here */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    /* border: 1px solid gray; */
+}
+
+.bgimg {
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/* General Styles */
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: #fbfffb ;
+    color: #4f4f4f;
+}
+h1 {
+    font-size: 6rem;
+    color: antiquewhite;
+}
+.myname h2 {
+    font-size: 4rem;
+    padding-left: 1vh;
+}
+
+/* Header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1vh;
+}
+.links {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.links:hover{
+    color:white;
+}
+.links a {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    padding: 1vh;
+}
+/* Top section Styles */
+
+#home {
+    width: 80%;
+    margin: 0 auto;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../Images/me.png);
+    background-position: center;
+}
+
+/* Bottom section */
+
+.bottom {
+    display: flex;
+    margin: 2% 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.bottom div{
+    width: 27%;
+}
+.mydog div {
+    background-image: url("../Images/Bunny.jpg");
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5%;
+}
+.mydog {
+    text-align: center;
+    align-content: space-between;
+}
+footer {
+    display: flex;
+    text-align: center;
+    background-color: blanchedalmond;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+
+}
+button {
+    padding: 1vh;
+}
