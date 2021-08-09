@@ -1,3 +1,4 @@
+/* Add CSS styling here */ 
 /* CSS Reset */
 
 html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
@@ -82,30 +83,52 @@ nav {
 .links {
     width: 50%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: flex-end;
+
 }
 .links:hover{
     color:white;
 }
 .links a {
+  border: 1px solid black;
     display: inline-block;
-    width: 25%;
+    width: 50%;
+    margin: 0 auto;
     text-align: center;
     text-decoration: none;
-    padding: 1vh;
+    padding: 2% 0;
+    font-size: 1.6rem;
+    color: black;
 }
 /* Top section Styles */
 
 #home {
-    width: 80%;
-    margin: 0 auto;
+    /* width: 80%; */
+    margin: auto;
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(../Images/me.png);
     background-position: center;
+}
+.bgimg{
+  display: flex;
+  width: 80%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  background-position: top;
+  text-align: center;
+  background-image: url(../Images/LO.jpg);
+}
+.main-titles {
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  text-align: center;
+
 }
 
 /* Bottom section */
@@ -139,8 +162,80 @@ footer {
     height: 10vh;
     align-items: center;
     justify-content: center;
-
 }
 button {
-    padding: 1vh;
+  padding: 2% 4%;
+}
+.links {
+  text-align: center;
+}
+.footer button{
+  padding: auto;
+
+}
+
+
+/* 800 px media */
+@media (max-width: 800px){
+  /* button {
+    font-size: 1.2rem;
+    padding: 2%; */
+
+  #home {
+    height: 55vh;
+}
+  .bgimg{
+    height: 55vh;
+  }
+  .bottom {
+    margin-right: 2%;
+  }
+  
+  div.mydog {
+    justify-content: center;
+  }
+  .links a{
+    font-size: 1.2rem;
+    margin: auto;
+  }
+}
+
+/* 500px media */
+@media (max-width: 500px){
+  nav{
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+  .myname h2{
+    font-size: 4rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .links{
+    font-size: 1rem;
+    flex-direction: column;
+    width: 100%;
+  }
+  .bgimg{
+    height: 40vh;
+  }
+  #home {
+    height: auto;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .bottom div{
+    width: 40%;
+  }
+  .mydog div {
+    width: 100%;
+  }
+
+
 }
