@@ -1,3 +1,4 @@
+/* Add CSS styling here */ 
 /* CSS Reset */
 
 html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
@@ -143,4 +144,4 @@ footer {
 }
 button {
     padding: 1vh;
-}
+} 
